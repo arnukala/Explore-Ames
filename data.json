@@ -1,0 +1,143 @@
+{
+  "places": [
+    {
+      "title": "Diners",
+      "image": "assets/images/diners.jpg",
+      "chips": ["🍳 Breakfast", "🍔 Casual"],
+      "description": "From hearty breakfasts to late-night bites, enjoy Ames’ best local food spots.",
+      "link": "diners.html",
+      "buttonText": "Explore Diners"
+    },
+    {
+      "title": "Explore Us",
+      "image": "assets/images/Explore.jpg",
+      "chips": ["🗺️ Landmarks", "🌿 Trails"],
+      "description": "Find trails, landmarks, and hidden gems across Ames’ most loved spots.",
+      "link": "explore.html",
+      "buttonText": "Explore Places"
+    },
+    {
+      "title": "Shop",
+      "image": "assets/images/shop.jpg",
+      "chips": ["🛍️ Merch", "🎁 Gifts"],
+      "description": "Browse Ames merch, student-designed apparel, and accessories you’ll love.",
+      "link": "shop.html",
+      "buttonText": "Shop Us"
+    },
+    {
+      "title": "About",
+      "image": "assets/images/about.jpg",
+      "chips": ["📸 Stories", "👥 Team"],
+      "description": "Meet the students behind Explore Ames website.",
+      "link": "authors.html",
+      "buttonText": "Meet Authors"
+    }
+  ],
+
+  "diners": [
+    {
+      "name": "The Café",
+      "cuisine": "American",
+      "specialty": "Brunch & Coffee",
+      "timings": "8 AM – 2 PM",
+      "address": "2616 Northridge Pkwy, Ames, IA",
+      "rating": "⭐⭐⭐⭐⭐",
+      "image": "assets/images/diner1.png"
+    },
+    {
+      "name": "Hickory Park",
+      "cuisine": "BBQ",
+      "specialty": "Smoked Meats & Ice Cream",
+      "timings": "11 AM – 9 PM",
+      "address": "1404 S Duff Ave, Ames, IA",
+      "rating": "⭐⭐⭐⭐☆",
+      "image": "assets/images/diner2.png"
+    },
+    {
+      "name": "Dublin Bay Irish Pub",
+      "cuisine": "Irish",
+      "specialty": "Shepherd’s Pie & Beer",
+      "timings": "11 AM – 10 PM",
+      "address": "320 S 16th St, Ames, IA",
+      "rating": "⭐⭐⭐⭐⭐",
+      "image": "assets/images/diner3.png"
+    },
+    {
+      "name": "Indian Delights",
+      "cuisine": "Indian",
+      "specialty": "Tandoori Chicken & Curries",
+      "timings": "11 AM – 9:30 PM",
+      "address": "120 Hayward Ave, Ames, IA",
+      "rating": "⭐⭐⭐⭐☆",
+      "image": "assets/images/diner4.png"
+    },
+    {
+      "name": "Cafe Beaudelaire",
+      "cuisine": "Brazilian",
+      "specialty": "Sandwiches & Cocktails",
+      "timings": "11 AM – 10 PM",
+      "address": "2504 Lincoln Way, Ames, IA",
+      "rating": "⭐⭐⭐⭐⭐",
+      "image": "assets/images/diner5.png"
+    },
+    {
+      "name": "Provisions Lot F",
+      "cuisine": "Contemporary",
+      "specialty": "Gourmet Sandwiches & Bakery",
+      "timings": "7 AM – 3 PM",
+      "address": "2400 N Loop Dr, Ames, IA",
+      "rating": "⭐⭐⭐⭐⭐",
+      "image": "assets/images/diner6.png"
+    },
+    {
+      "name": "West Towne Pub",
+      "cuisine": "American",
+      "specialty": "Burgers & Craft Beer",
+      "timings": "11 AM – 11 PM",
+      "address": "4518 Mortensen Rd, Ames, IA",
+      "rating": "⭐⭐⭐⭐☆",
+      "image": "assets/images/diner7.png"
+    },
+    {
+      "name": "Thai Kitchen",
+      "cuisine": "Asian",
+      "specialty": "Pad Thai & Curry Bowls",
+      "timings": "11 AM – 9 PM",
+      "address": "2712 Stange Rd, Ames, IA",
+      "rating": "⭐⭐⭐⭐⭐",
+      "image": "assets/images/diner8.png"
+    },
+    {
+      "name": "Aunt Maude’s",
+      "cuisine": "American",
+      "specialty": "Fine Dining & Seafood",
+      "timings": "4 PM – 9 PM",
+      "address": "547 Main St, Ames, IA",
+      "rating": "⭐⭐⭐⭐⭐",
+      "image": "assets/images/diner9.png"
+    }
+  ],
+
+  "explore": [
+    {
+      "name": "Reiman Gardens",
+      "description": "Beautiful botanical garden with themed displays, butterfly exhibits, and peaceful walking paths.",
+      "image": "assets/images/place1.png"
+    },
+    {
+      "name": "ISU Campanile",
+      "description": "Iconic Iowa State landmark — enjoy the carillon bells and scenic views of the campus lawn.",
+      "image": "assets/images/place2.png"
+    },
+    {
+      "name": "Main Street Ames",
+      "description": "Historic downtown filled with restaurants, art galleries, boutiques, and local events year-round.",
+      "image": "assets/images/place3.png"
+    },
+    {
+      "name": "Ada Hayden Heritage Park",
+      "description": "Lakefront park with trails, fishing, and picnicking — a perfect spot for nature lovers.",
+      "image": "assets/images/place4.png"
+    }
+  ]
+}

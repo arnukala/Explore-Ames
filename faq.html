@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ • Explore Ames</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="assets/styles-member2.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/images/logo.png" alt="Explore Ames logo" height="72">
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="diners.html">DINERS</a></li>
+          <li class="nav-item"><a class="nav-link" href="explore.html">EXPLORE</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">SHOP</a></li>
+          <li class="nav-item"><a class="nav-link" href="authors.html">AUTHORS</a></li>
+          <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Floating Header -->
+  <header class="page-header">
+    <div class="content-box">
+      <span class="badge">FAQ</span>
+      <h1>Questions & Answers</h1>
+      <p>Find helpful answers about Explore Ames, dining, and local experiences.</p>
+    </div>
+  </header>
+
+  <!-- Accordion Section -->
+  <main>
+    <div class="accordion" id="faqAccordion">
+
+      <!-- General -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+            General Questions
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p><strong>What is Explore Ames?</strong><br>Explore Ames is a student-created guide that highlights local diners, shops, and attractions around Ames, Iowa.</p>
+            <p><strong>Who manages the website?</strong><br>It’s built and maintained by the COM S 3190 Web Development student team at Iowa State University.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orders -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Orders and Payments
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p><strong>Can I place orders online?</strong><br>Currently, Explore Ames is an informational website and does not process payments or orders directly.</p>
+            <p><strong>Will future updates include e-commerce?</strong><br>Yes, future versions may integrate secure checkout options for local products and souvenirs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shipping -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Shipping and Pickup
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p><strong>How does pickup work?</strong><br>For future shop items, users will be able to select pickup points at listed Ames locations.</p>
+            <p><strong>Do you offer shipping?</strong><br>Shipping options are not yet available but are being planned for upcoming releases.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Returns -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            Returns and Exchange
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p><strong>Can I return a product?</strong><br>Once the shop feature launches, products can be returned within 7 days of pickup.</p>
+            <p><strong>Are there any conditions?</strong><br>Items must be unused and in original packaging. Refunds will be processed through the original payment method.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Emergency -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+            Emergency Contacts
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p><strong>What if I need urgent help in Ames?</strong><br>For emergencies, call <strong>911</strong>. For campus-related help, contact ISU Police at <strong>(515) 294-4428</strong>.</p>
+            <p><strong>Can I reach Explore Ames team?</strong><br>Yes, you can reach the student team via email at <strong>exploreames@iastate.edu</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    © <span id="year"></span> Explore Ames
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/faq.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Authors • Explore Ames</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
+
+  <link rel="stylesheet" href="assets/styles-member1.css" />
+
+  <style>
+    .authors-hero{
+      background:linear-gradient(180deg,#e7f7ea 0%,#d9f3de 100%);
+      border-radius:var(--radius);box-shadow:var(--shadow);
+      padding:2rem 1.25rem;
+      text-align:center
+    }
+    .authors-hero .kicker{
+      display:inline-block;
+      font-weight:800;
+      letter-spacing:.6px;
+      color:var(--brand-green-dark);
+      background:#eef7f0;
+      border:1px solid rgba(49,107,60,.18);
+      border-radius:999px;
+      padding:.35rem .7rem
+    }
+    
+    #authorsGrid .card{border-radius:var(--radius);overflow:hidden}
+    #authorsGrid .card-img-top{height:500px;width:100%;object-fit:cover}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><img src="assets/images/logo.png" alt="Explore Ames logo" loading="lazy" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav gap-lg-3">
+          <li><a class="nav-link" href="diners.html">DINERS</a></li>
+          <li><a class="nav-link" href="explore.html">EXPLORE</a></li>
+          <li><a class="nav-link" href="shop.html">SHOP</a></li>
+          <li><a class="nav-link" href="authors.html">AUTHORS</a></li>
+          <li><a class="nav-link" href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-4">
+    <div class="container">
+      <section class="authors-hero mb-4">
+        <div class="kicker mb-2">OUR TEAM</div>
+        <h1 class="fw-bold mb-2" style="color:#1d4731;letter-spacing:.2px">Meet the Authors</h1>
+        <p class="mb-0 text-muted" style="max-width:62ch;margin-inline:auto">
+          We built this website called Explore Ames for our class <i>Construction of User Interfaces, Fall 2025</i>. Through this project, we learned a lot about HTML, CSS, and JavaScript while making a website that helps people explore the culture, food, and places around Ames.
+        </p>
+      </section>
+
+      <section>
+        <div id="authorsGrid" class="row row-cols-1 row-cols-md-2 g-4"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="text-center py-3">
+      © <span id="year"></span> Explore Ames
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  <script src="authors.js" defer></script>
+</body>
+</html>

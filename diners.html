@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diners • Explore Ames</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="assets/styles-member2.css" />
+  
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/images/logo.png" alt="Explore Ames logo" height="44" />        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="diners.html">DINERS</a></li>
+          <li class="nav-item"><a class="nav-link" href="explore.html">EXPLORE</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">SHOP</a></li>
+          <li class="nav-item"><a class="nav-link" href="authors.html">AUTHORS</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-4">
+    <div class="container">
+      <!-- HERO -->
+      <header class="page-header">
+  <div class="content-box">
+    <span class="badge">DINING</span>
+    <h1>Local Favorites & Must-Try Eats</h1>
+    <p>Experience the best of Ames dining from cafés to classic local favorites.</p>
+  </div>
+</header>
+
+      <section class="diner-filters text-center mb-3">
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <button class="btn px-4 py-2 active" data-filter="all">All</button>
+          <button class="btn px-4 py-2" data-filter="American">American</button>
+          <button class="btn px-4 py-2" data-filter="BBQ">BBQ</button>
+          <button class="btn px-4 py-2" data-filter="Irish">Irish</button>
+          <button class="btn px-4 py-2" data-filter="Indian">Indian</button>
+          <button class="btn px-4 py-2" data-filter="Brazilian">Brazilian</button>
+          <button class="btn px-4 py-2" data-filter="Contemporary">Contemporary</button>
+          <button class="btn px-4 py-2" data-filter="Asian">Asian</button>
+        </div>
+      </section>
+
+      <section aria-labelledby="dinerGridTitle">
+        <h2 id="dinerGridTitle" class="visually-hidden">Diners</h2>
+        <div id="diner-grid" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4"></div>
+        <div id="empty-state" class="text-center py-5 d-none">
+          <p class="lead mb-0">No diners in this category yet.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    ©️ <span id="year"></span> Explore Ames
+  </footer>
+
+  <!-- JS -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="diners.js" defer></script>
+</body>
+</html>
